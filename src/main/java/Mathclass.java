@@ -1,28 +1,18 @@
-import java.util.Scanner;
+import java.util.Random;
 
 public class Mathclass {
     public static void main(String[ ] args) {
         System.out.println("Hello, World!");
 
-        /*double x = 5.14;
-        double y = 25;
-        double z = Math.max(x, y);
-        System.out.println(z); */
-        double x;
-        double y;
-        double z;
+Random random = new Random();
+//int x = random.nextInt(6)+1;  //for dice from 1 to 6
+// double y = random.nextDouble();
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter side x : ");
-        x = scanner.nextDouble();
+        boolean z = random.nextBoolean();
 
-        System.out.println("Enter side y : ");
-        y = scanner.nextDouble();
 
-        z = Math.sqrt((x*x)+(y*y));
-        System.out.println("The hypotenuse is: " +z);
 
-        scanner.close();
+System.out.println(z);
 
     }
 }
