@@ -4,14 +4,24 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        String day = "Friday";
+        switch (day) {
+            case "Sunday": System.out.println("Its Sunday");
+            break;
+            case "Monday": System.out.println("Its Monday");
+            break;
+            case "Tuesday": System.out.println("Its Tuesday");
+            break;
+            case "Wednesday": System.out.println("Its Wednesday");
+            break;
+            case "Thursday": System.out.println("Its Thursday");
+            break;
+            case "Friday": System.out.println("Its Friday");
+            break;
+            case "Saturday": System.out.println("Its Saturday");
+            break;
+            default: System.out.println("That is not a day!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
         }
     }
 }
