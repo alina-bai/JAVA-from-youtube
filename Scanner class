@@ -1,0 +1,75 @@
+In Java, the Scanner class is used to read input from various input sources like the keyboard, files, or streams. It’s part of the java.util package, so you need to import it to use it in your program. The most common use of Scanner is to capture user input from the console.
+
+How to Use the Scanner Class
+
+	1.	Import the Scanner Class:
+To use the Scanner, you need to import it first:
+
+import java.util.Scanner;
+
+
+	2.	Creating a Scanner Object:
+After importing, you can create a Scanner object. For reading input from the console, you can use System.in:
+
+Scanner scanner = new Scanner(System.in);
+
+
+	3.	Reading User Input:
+Once you have a Scanner object, you can use its methods to read different types of input:
+	•	String input:
+
+System.out.println("Enter your name: ");
+String name = scanner.nextLine();
+
+
+	•	Integer input:
+
+System.out.println("Enter your age: ");
+int age = scanner.nextInt();
+
+
+	•	Double input:
+
+System.out.println("Enter your height: ");
+double height = scanner.nextDouble();
+
+
+
+Common Methods of the Scanner Class
+
+	•	nextLine(): Reads a line of text (including spaces) as a String.
+	•	next(): Reads a single word (terminated by space or newline) as a String.
+	•	nextInt(): Reads an integer value.
+	•	nextDouble(): Reads a double value (floating-point number).
+	•	nextBoolean(): Reads a boolean value (true or false).
+
+Example Code
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Scanner object
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt user for input
+        System.out.println("Enter your name: ");
+        String name = scanner.nextLine();
+
+        System.out.println("Enter your age: ");
+        int age = scanner.nextInt();
+
+        // Display the input
+        System.out.println("Hello, " + name + ". You are " + age + " years old.");
+
+        // Close the scanner to prevent resource leaks
+        scanner.close();
+    }
+}
+
+Important Notes:
+
+	1.	Closing the Scanner: It’s good practice to close the scanner using scanner.close() when you’re done to prevent resource leaks, especially when working with files or streams.
+	2.	Handling Input Errors: If you try to read an input of the wrong type (e.g., entering text when an integer is expected), the program will throw an exception (InputMismatchException). You can handle this by adding error handling (e.g., using try-catch).
+
+In summary, the Scanner class is an easy and efficient way to handle user input in Java. It simplifies reading different types of input and allows you to interact with the user in console applications.
