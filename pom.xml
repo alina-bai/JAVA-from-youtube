@@ -5,7 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
+<<<<<<< HEAD
     <artifactId>mathclass</artifactId>
+=======
+    <artifactId>arrays</artifactId>
+>>>>>>> 0bf312c (Arrays in Java)
     <version>1.0-SNAPSHOT</version>
 
     <properties>
